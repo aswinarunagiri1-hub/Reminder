@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>📚 Study Reminder Full App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+    <h1>📚 Study Time </h1>
+
+    <div class="inputBox">
+        <input type="time" id="timeInput">
+        <label>
+            <input type="checkbox" id="repeatDaily"> Repeat Daily
+        </label>
+        <button onclick="addReminder()">Add Reminder</button>
+    </div>
+
+    <h2>⏰ Upcoming Study Reminders</h2>
+    <ul id="reminderList"></ul>
+
+    <h2>⏳ Countdown</h2>
+    <div id="countdown">No active reminder</div>
+</div>
+
+<audio id="alarmSound" src="alarm.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
